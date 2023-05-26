@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 20px;
+}
+
+/* header */
+
+.header--nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header--nav ul a:hover{
+  color: pink;
+}
+
+.header--nav__icoNav {
+  visibility: hidden;
+}
+
+.header--div {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.nav--carrito {
+  display: flex;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.nav--img__carrito {
+  display: flex;
+  visibility: visible;
+  position: relative;
+  left: 220px;
+}
+
+.header--nav__icoNav {
+  visibility: hidden;
+}
+
+/* /header */
+
+/* Main */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.main--descripcion__parrafo {
+  padding: 10px;
+  text-align: center;
+  word-spacing: 0.6px;
+  letter-spacing: 0.3px;
+}
+.main--categorias {
+  display: flex;
+  justify-content: center;
+}
+
+.main--categorias__titulo {
+  text-align: center;
+  font-style: none;
+  font-family: "Yrsa", serif;
+  display: block;
+}
+
+.main--categorias {
+  display: flex;
+  justify-content: center;
+}
+
+.main--cards {
+  width: 17rem;
+  padding: 20px;
+}
+
+.parrafo--card1 {
+  padding-top: 12px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+/* /Main */
+
+/* Footer */
+
+.columnas {
+  background: white;
+}
+
+.copyright {
+  background: white;
+}
+
+.footer--contacto p {
+  margin: 9px;
+}
+
+.footer--contacto h6 {
+  margin: 0px 0px 0px;
+}
+
+.footer--metodos p {
+  margin: 9px;
+}
+
+/* /Footer */
+
+/* Media Query */
+
+/* HeaderQuery */
+
+@media screen and (max-width: 991px) {
+  .nav {
+    margin-top: 15px;
+  }
+
+  .header--nav__icoNav {
+    visibility: visible;
+  }
+
+  .header--img__superior {
+    visibility: hidden;
+  }
+
+  .header--div {
+    padding: 0;
+    height: 2px;
+  }
+
+  .nav {
+    padding-top: 0px;
+  }
+
+  .nav--carrito {
+    display: flex;
+    position: absolute;
+    right: 125px;
+    top: 2px;
+    visibility: visible;
+  }
+
+  .nav--img__carrito {
+    display: flex;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  
+
+  .header--nav {
+    display: flex;
+    justify-content: start;
+  }
+}
+/* /HeaderQuery */
+
+/* /Media Query */
